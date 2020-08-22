@@ -17,7 +17,7 @@ class PredictionBot:
         f"@{getenv('MONGODB_URI')}/test?retryWrites=true&w=majority"
     ).medcabin.strains
     df = pd.read_csv('data/cannabis.csv')
-    tfidf = TfidfVectorizer(ngram_range=(1, 3), max_features=5000)
+    tfidf = TfidfVectorizer(ngram_range=(1, 3), max_features=6000)
     knn = NearestNeighbors(n_neighbors=1, n_jobs=-1)
     tokens = tfidf.fit_transform(
         df['Description'] + ' ' + df['Effects'] + ' ' + df['Flavors']
