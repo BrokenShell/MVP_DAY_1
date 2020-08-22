@@ -5,9 +5,9 @@ by Robert Sharp
 
 
 ## DS Unit 3
-2. Database
-1. Flask API
-3. Team work
+1. Database
+2. Flask API
+3. Team Work
 
 
 ## DS Unit 4
